@@ -69,8 +69,81 @@ This project analyzes hotel reviews to understand customer satisfaction, extract
 
 ## ▶️ Getting Started
 
-### 1️⃣ Clone the Repository
 
-```bash
-git clone https://github.com/your-username/hotel-review-sentiment.git
-cd hotel-review-sentiment
+
+## 🧪 Sample Input
+
+> Enter **5 reviews** (as required input):
+
+The room was clean but the staff was very rude.
+
+Loved the food and ambiance. Everything was perfect.
+
+Poor service and noisy environment. Never coming back.
+
+Excellent hospitality and very comfortable stay.
+
+Not satisfied with room cleanliness and response time.
+
+
+
+---
+
+## 📊 Sample Output (on webpage)
+
+| Review | Sentiment | Keywords |
+|--------|-----------|----------|
+| The room was clean but the staff was very rude. | Negative | room, clean, staff |
+| Loved the food and ambiance. Everything was perfect. | Positive | food, ambiance |
+| Poor service and noisy environment. Never coming back. | Negative | service, environment |
+| Excellent hospitality and very comfortable stay. | Positive | hospitality, stay |
+| Not satisfied with room cleanliness and response time. | Negative | room, cleanliness, response |
+
+✅ Downloaded as `output_reviews.xlsx` with both input and output.
+
+---
+
+## ⬇️ Downloadable Files
+
+- 📥 **Input File (auto-generated)**: Contains your entered reviews
+- 📥 **Output File (auto-generated)**: Contains sentiment & extracted keywords
+- ✅ All files exported in `.xlsx` format using `xlsxwriter`
+
+---
+
+
+
+## 🏗️ Project Structure
+
+hotel-review-sentiment/
+├── app.py # Main Streamlit application
+├── requirements.txt # Python dependencies
+├── output_reviews.xlsx # Exported output (created after running)
+├── README.md # Full documentation (this file)
+
+
+---
+
+📁 Files You’ll See
+File	Description
+app.py	Main Streamlit app file
+requirements.txt	List of all required Python packages
+output_reviews.xlsx	Excel file with reviews and sentiment results
+README.md	This documentation
+
+📌 Future Improvements (Optional Ideas)
+Multi-label sentiment (detect multiple emotions)
+
+Admin dashboard for visual analytics
+
+Topic clustering of reviews using LDA
+
+Deploy to cloud (e.g., Streamlit Cloud or Heroku)
+
+📜 License
+This project is for educational purposes under the MIT License.
+
+🙌 Credits
+Built by [Your Name]
+Model by 🤗 Hugging Face Transformers
+Web UI using Streamlit
